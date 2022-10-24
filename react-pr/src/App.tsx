@@ -1,11 +1,15 @@
 import React from 'react';
-import Greetings from './Greetings';
+import Counter from './Counter';
+import Hello from './Hello';
 
 const App: React.FC = () => {
-  const onClick = (name: string) => {
-    console.log(`hi`);
-  };
-  return <Greetings name="Hello" onClick={onClick} />;
+  return (
+    <div>
+      <Hello />
+      <Counter />
+      <button onClick={() => window.open('www.naver.com', '_blank')}>[url 링크]</button>
+    </div>
+  );
 };
 
 export default App;
