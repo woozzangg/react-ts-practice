@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Greetings from './Greetings';
 
-function App() {
-  return (
-    <div className="App">
-      Hello World!
-    </div>
-  );
-}
+const App: React.FC = () => {
+  const onClick = (name: string) => {
+    console.log(`hi`);
+  };
+  return <Greetings name="Hello" onClick={onClick} />;
+};
 
 export default App;
