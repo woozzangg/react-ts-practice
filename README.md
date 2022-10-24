@@ -9,3 +9,4 @@
 
 - 1019 : 연습 프로젝트 시작
 - 1020 : Hello world 찍기
+- 1024 : greeting에 클릭시 console.log 찍는 버튼
