@@ -1,15 +1,29 @@
 import React from 'react';
-import Counter from './Counter';
-import Hello from './Hello';
+import Counter from './components/Counter';
+import Hello from './components/Hello';
+import "./App.css";
+import WoozzangGithub from "./components/WoozzangGithub/WoozzangGithub";
 
-const App: React.FC = () => {
+function App() {
+  const handleClick = () => {
+    window.open("www.naver.com");
+  };
+
   return (
     <div>
-      <Hello />
-      <Counter />
-      <button onClick={() => window.open('www.naver.com', '_blank')}>[url 링크]</button>
+      <WoozzangGithub />
     </div>
   );
-};
+}
+
+// const App: React.FC = () => {
+//   return (
+//     <div>
+//       <Hello />
+//       <Counter />
+//       <button onClick={() => window.open('www.naver.com', '_blank')}>[url 링크]</button>
+//     </div>
+//   );
+// };
 
 export default App;
